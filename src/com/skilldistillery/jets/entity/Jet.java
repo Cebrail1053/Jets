@@ -50,5 +50,16 @@ public abstract class Jet {
 		this.price = price;
 	}
 	
+	public void fly() {
+		double flyingTime = range / speed;
+		System.out.printf("Model: " + model + " Speed: " + speed + "mph Range: " + range
+						   + " miles Flying Time: %.2f hours Price: " + price + "\n", flyingTime);
+	}
+
+	@Override
+	public String toString() {
+		return "Jet: " + model + ", " + speed + "mph , range = " + range + " miles , price = " + price ;
+	}
+	
 	
 }
